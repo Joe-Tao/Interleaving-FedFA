@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+#SBATCH -A C3SE2024-1-17 -p vera
+#SBATCH -t 1-00:00:00
+#SBATCH --gpus-per-node=T4:1
+
+python main_mnist.py
